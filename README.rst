@@ -19,6 +19,14 @@ Installation
 
     pip install robotframework-seriallibrary
 
+.. note::
+
+   `robotframework-pyserial <https://pypi.org/project/robotframework-pyserial/>`_
+   is a different library that also installs a ``SerialLibrary`` module, with
+   other keywords (``Connect``, ``Write``, ``Read``...). Do not install both in
+   the same environment: ``Library    SerialLibrary`` can only load one of them,
+   and test suites written for the other one fail with unknown keywords.
+
 
 Usage
 =====
