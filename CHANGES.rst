@@ -25,6 +25,9 @@ Modernisation
   ``Set RS485 Mode``...). Matching is case-insensitive, so the old spelling
   still works.
 * Packaging moved to PEP 621 metadata built with hatchling.
+* Releases are published to PyPI by GitHub Actions and the keyword
+  documentation is online at
+  https://whosaysni.github.io/robotframework-seriallibrary/.
 
 Fixes
 
@@ -99,7 +102,7 @@ Fixed typo in doc/docstring. (Thanks @gerryqd)
 
 Set RS485 Mode now accepts keyword arguments so that
 ``serial.Serial.rs485_mode`` attribute can be initialized as valid
-``RS485Settings`` instance.
+``RS485Settings`` instance. (`#1`__)
 
 __ https://github.com/whosaysni/robotframework-seriallibrary/issues/1
 

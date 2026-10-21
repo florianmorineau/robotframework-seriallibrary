@@ -10,6 +10,7 @@ readme = "README.rst"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 authors = [{ name = "Yasushi Masuda", email = "whosaysni@gmail.com" }]
+maintainers = [{ name = "Florian Morineau", email = "florian.morineau@gmail.com" }]
 keywords = ["robotframework", "testing", "testautomation", "serial", "pyserial"]
 requires-python = ">=3.10"
 dependencies = [
@@ -37,8 +38,10 @@ dev = ["pytest >= 8", "robotframework-robocop >= 6", "ruff"]
 
 [project.urls]
 Homepage = "https://github.com/whosaysni/robotframework-seriallibrary"
-Documentation = "https://github.com/whosaysni/robotframework-seriallibrary/blob/master/docs/SerialLibrary.html"
-Changelog = "https://github.com/whosaysni/robotframework-seriallibrary/blob/master/CHANGES.rst"
+Documentation = "https://whosaysni.github.io/robotframework-seriallibrary/"
+Source = "https://github.com/whosaysni/robotframework-seriallibrary"
+Issues = "https://github.com/whosaysni/robotframework-seriallibrary/issues"
+Changelog = "https://github.com/whosaysni/robotframework-seriallibrary/blob/develop/CHANGES.rst"
 
 [tool.hatch.version]
 path = "src/SerialLibrary/version.py"

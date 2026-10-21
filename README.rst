@@ -74,7 +74,8 @@ space-separated hexadecimal pairs:
         Should Be Equal    ${read}    AB CD
         [Teardown]    Delete All Ports
 
-See the `keyword documentation <docs/SerialLibrary.html>`_ for all keywords.
+See the `keyword documentation <https://whosaysni.github.io/robotframework-seriallibrary/>`_
+for all keywords.
 
 
 Development
@@ -86,8 +87,8 @@ Development
     .venv/bin/pip install -e .[dev]
     .venv/bin/pytest                                   # unit tests
     .venv/bin/robot --outputdir results tests/acceptance  # acceptance tests
-    .venv/bin/ruff check src tests && .venv/bin/robocop check tests
-    .venv/bin/libdoc SerialLibrary docs/SerialLibrary.html
+    .venv/bin/ruff check src tests tools && .venv/bin/robocop check tests
+    .venv/bin/python tools/libdoc.py                   # keyword documentation
 
 ``tests/hardware`` runs against a real ESP32 board (auto-reset wiring on
 DTR/RTS); it only resets the board and reads its boot log:
@@ -98,3 +99,6 @@ DTR/RTS); it only resets the board and reads its boot log:
 
 ``tests/acceptance/legacy`` holds the original 0.4.x test suite, kept
 unchanged to make sure existing test suites keep working.
+
+See `CONTRIBUTING.rst <https://github.com/whosaysni/robotframework-seriallibrary/blob/develop/CONTRIBUTING.rst>`_
+to report a bug, propose a change or make a release.
