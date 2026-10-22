@@ -111,10 +111,10 @@ class SerialLibrary:
 
     Import the library and add a port:
 
-    | ***** Settings *****
+    | * Settings *
     | Library    SerialLibrary
     |
-    | ***** Test Cases *****
+    | * Test Cases *
     | Hello serial test
     |     `Add Port`               loop://
     |     `Write Data`             Hello World    encoding=ascii
@@ -124,10 +124,10 @@ class SerialLibrary:
     When a suite talks to a single port, the port and the encoding can be
     given when importing the library:
 
-    | ***** Settings *****
+    | * Settings *
     | Library    SerialLibrary    /dev/ttyUSB0    encoding=ascii    baudrate=115200
     |
-    | ***** Test Cases *****
+    | * Test Cases *
     | Hello serial test
     |     `Write Data`             Hello World
     |     `Read Data Should Be`    Hello World

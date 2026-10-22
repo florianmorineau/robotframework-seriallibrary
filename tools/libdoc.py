@@ -37,6 +37,9 @@ def generate(output: Path) -> None:
     for item in [doc, *doc.inits, *doc.keywords]:
         if item.source:
             item.source = Path(item.source).relative_to(ROOT).as_posix()
+    # The libdoc command line does this before writing HTML; without it the
+    # documentation is shown as raw Robot Framework markup.
+    doc.convert_docs_to_html()
     doc.save(str(output), "HTML")
 
 
